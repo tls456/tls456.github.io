@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "main";
+@use "main";
 
 html[data-mode="light"], html:not([data-mode]) {
   --main-bg: #f1f0ec;
