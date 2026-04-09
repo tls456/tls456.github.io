@@ -2,17 +2,3 @@
 ---
 
 @use "main";
-
-html[data-mode="light"], html:not([data-mode]) {
-  --main-bg: #f1f0ec;
-  --sidebar-bg: #e8e6df;
-}
-
-#main-wrapper {
-  background-color: #f1f0ec !important;
-}
-
-footer {
-  background-color: #f1f0ec !important;
-  border-top: none !important;
-}
