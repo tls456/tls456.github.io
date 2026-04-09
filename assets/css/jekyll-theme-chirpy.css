@@ -1,20 +1,15 @@
 ---
 ---
 
-@import "main";
-
 html, body {
   background-color: #f1f0ec !important;
 }
-
 #main-wrapper {
   background-color: #f1f0ec !important;
 }
-
 #sidebar {
   background-color: #e8e6df !important;
 }
-
 footer {
   background-color: #f1f0ec !important;
   border-top: none !important;
