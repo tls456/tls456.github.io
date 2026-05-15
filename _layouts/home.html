@@ -50,8 +50,10 @@ layout: default
 <!-- 카테고리 카드 그리드 -->
 <h2 style="margin-bottom: 1rem; font-size: 1.2rem; color: #333;">Categories</h2>
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2rem;">
+  {% assign top_categories = "Bug Bounty,CTF/Wargame,개발,공모전/자격증,논문/컨퍼런스,블로그/기술문서" | split: "," %}
   {% assign categories = site.categories | sort %}
   {% for category in categories %}
+    {% unless top_categories contains category[0] %}{% continue %}{% endunless %}
   {% case category[0] %}
     {% when '개발' %}{% assign icon = 'fas fa-code' %}
     {% when 'CTF/Wargame' %}{% assign icon = 'fas fa-flag' %}
