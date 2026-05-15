@@ -12,12 +12,15 @@ layout: page
 
 {% assign sort_categories = site.categories | sort %}
 
+{% assign top_categories = "Bug Bounty,CTF/Wargame,개발,공모전/자격증,논문/컨퍼런스,블로그/기술문서" | split: "," %}
+
 {% for category in sort_categories %}
   {% assign category_name = category | first %}
   {% assign posts_of_category = category | last %}
   {% assign first_post = posts_of_category | first %}
 
   {% if category_name == first_post.categories[0] %}
+  {% unless top_categories contains category_name %}{% continue %}{% endunless %}
     {% assign sub_categories = '' | split: '' %}
 
     {% for post in posts_of_category %}
@@ -39,15 +42,7 @@ layout: page
         class="card-header d-flex justify-content-between hide-border-bottom"
       >
         <span class="ms-2">
-          {% case category_name %}
-            {% when '개발' %}<i class="fas fa-code fa-fw"></i>
-            {% when 'CTF/Wargame' %}<i class="fas fa-flag fa-fw"></i>
-            {% when 'Bug Bounty' %}<i class="fas fa-bug fa-fw"></i>
-            {% when '블로그/기술문서' %}<i class="fas fa-book fa-fw"></i>
-            {% when '논문/컨퍼런스' %}<i class="fas fa-graduation-cap fa-fw"></i>
-            {% when '공모전/자격증' %}<i class="fas fa-trophy fa-fw"></i>
-            {% else %}<i class="far fa-folder fa-fw"></i>
-          {% endcase %}
+          <i class="far fa-folder{% if sub_categories_size > 0 %}-open{% endif %} fa-fw"></i>
 
           {% capture _category_url %}/categories/{{ category_name | slugify | url_encode }}/{% endcapture %}
           <a href="{{ _category_url | relative_url }}" class="mx-2">{{ category_name }}</a>
