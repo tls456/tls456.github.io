@@ -1,0 +1,11 @@
+I"c<h2 id="문제">문제</h2>
+<p><a href="https://overthewire.org/wargames/bandit/bandit7.html">Bandit Level 6 -&gt; Level 7</a></p>
+
+<h2 id="풀이-과정">풀이 과정</h2>
+<p><code class="language-plaintext highlighter-rouge">find / -group bandit6 -user bandit7 -size 33c</code> 로  사용자 소유가 bandit7이고 그룹 소유자가 bandit6이고 사이즈가 33바이트인 파일 탐색</p>
+
+<p>대부분 Permission denied이고 딱 하나만 정상적으로 출력되었다.</p>
+
+<p><img src="/assets/images/Bandit/14.png" alt="image14" />
+<img src="/assets/images/Bandit/15.png" alt="image15" /></p>
+:ET

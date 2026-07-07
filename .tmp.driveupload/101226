@@ -1,0 +1,15 @@
+I"Y<h2 id="문제">문제</h2>
+<p><a href="https://overthewire.org/wargames/bandit/bandit15.html">Bandit Level 14 -&gt; Level 15</a></p>
+
+<h2 id="풀이-과정">풀이 과정</h2>
+<p>localhost 30000번 포트에 연결 후 이전 레벨 비밀번호를 입력하면 된다.</p>
+
+<p>nmap으로 로컬호스트 포트 확인
+<img src="/assets/images/Bandit/32.png" alt="image32" /></p>
+
+<p>30000번 포트 확인, 연결 상태 확인
+<img src="/assets/images/Bandit/33.png" alt="image33" /></p>
+
+<p>telnet으로 접속 후 이전 비번 입력
+<img src="/assets/images/Bandit/34.png" alt="image34" /></p>
+:ET

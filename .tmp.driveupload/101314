@@ -1,0 +1,13 @@
+I"Y<h2 id="문제">문제</h2>
+<p><a href="https://overthewire.org/wargames/bandit/bandit5.html">Bandit Level 4 -&gt; Level 5</a></p>
+
+<h2 id="풀이-과정">풀이 과정</h2>
+<p>inhere 디렉토리 안에 10개의 파일이 있다.<br />
+<img src="/assets/images/Bandit/10.png" alt="image10" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">file</code> 명령어를 통해 파일 종류를 확인한다. <br />
+<img src="/assets/images/Bandit/11.png" alt="image11" /></p>
+
+<p>유일하게 ASCII text인 7번 파일 출력<br />
+<img src="/assets/images/Bandit/12.png" alt="image12" /></p>
+:ET
