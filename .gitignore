@@ -25,3 +25,6 @@ package-lock.json
 _sass/vendors
 assets/js/dist
 _site
+
+# macOS 잡파일
+.DS_Store
