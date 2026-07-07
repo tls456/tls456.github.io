@@ -1,13 +1,39 @@
-html, body {
-  background-color: #f1f0ec !important;
+/* ===== 0x Zombie custom theme (light mode) ===== */
+
+html:not([data-mode]),
+html[data-mode="light"] {
+  /* 배경 */
+  --main-bg: #f1f0ec;
+  --sidebar-bg: #e8e6df;
+
+  /* 구분선(hr)·전반 테두리 */
+  --main-border-color: #d9d4c7;
+
+  /* 표 */
+  --tb-odd-bg: #e9e7df;
+  --tb-border-color: #d5d0c3;
+
+  /* 인용문 */
+  --blockquote-border-color: #c9c2b0;
+  --blockquote-text-color: #6b675e;
+
+  /* 코드 */
+  --highlight-bg-color: #e9e6dd;
+  --language-border-color: #d9d4c7;
+  --inline-code-bg: rgba(135, 131, 120, 0.15);
+  --highlighter-rouge-color: #eb5757;   /* 인라인 코드 글자색 */
+
+  /* 카드 (홈 목록 등) */
+  --card-bg: #faf9f4;
+
+  /* 강조색 */
+  --link-color: #0f6e63;
+  --link-underline-color: #d5c4b5;
+  --toc-highlight: #0f6e63;
+  --btn-share-hover-color: #0f6e63;
+  --checkbox-checked-color: #0f6e63;
 }
-#main-wrapper {
-  background-color: #f1f0ec !important;
-}
-#sidebar {
-  background-color: #e8e6df !important;
-}
+
 footer {
-  background-color: #f1f0ec !important;
   border-top: none !important;
 }
