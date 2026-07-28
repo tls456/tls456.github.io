@@ -1,9 +1,0 @@
-I"�<h2 id="문제">문제</h2>
-<p><a href="https://overthewire.org/wargames/bandit/bandit19.html">Bandit Level 18 -&gt; Level 19</a></p>
-
-<h2 id="풀이-과정">풀이 과정</h2>
-<p>문제 설명을 보니 포트가 바로 닫히게 설정되어 있다고 한다.<br />
-접속 명령 바로 뒤에 <code class="language-plaintext highlighter-rouge">cat readme</code>를 붙여 해결하였다.</p>
-
-<p><img src="/assets/images/Bandit/45.png" alt="image45" /></p>
-:ET
