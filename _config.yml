@@ -207,6 +207,7 @@ compress_html:
     envs: [development]
 
 exclude:
+  - .tmp.driveupload
   - "*.gem"
   - "*.gemspec"
   - docs
