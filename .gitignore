@@ -28,3 +28,6 @@ _site
 
 # macOS 잡파일
 .DS_Store
+
+# Google Drive upload temporary files
+.tmp.driveupload/
