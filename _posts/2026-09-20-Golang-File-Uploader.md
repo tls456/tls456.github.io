@@ -1,5 +1,6 @@
 ---
 title: Golang으로 파일 업로드 서비스 개발
+published: false
 date: 2026-09-20 01:22:00 +0900
 categories: [개발]
 tags: [개발, 블로그/기술문서/리서치, File Upload, Golang, Go]
