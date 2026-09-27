@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="690" viewBox="0 0 1000 690" role="img" aria-labelledby="title desc">
+  <title id="title">Three independent questions about a fuzzer</title>
+  <desc id="desc">Classify a fuzzer by what internal information it uses, how it constructs inputs, and how it executes tests. Structure-aware techniques and execution patterns can be combined.</desc>
+  <rect width="1000" height="690" rx="20" fill="#f8fafc"/>
+  <g font-family="DejaVu Sans, sans-serif" fill="#0f172a">
+    <text x="40" y="51" font-size="28" font-weight="bold">Three questions, separate axes</text>
+    <text x="40" y="85" font-size="18" fill="#475569">One fuzzer can combine several of these techniques.</text>
+    <text x="40" y="132" font-size="21" font-weight="bold">1. What internal information is used?</text>
+    <g stroke="#cbd5e1" stroke-width="1.5" fill="#e0f2fe">
+      <rect x="40" y="153" width="290" height="111" rx="12"/>
+      <rect x="355" y="153" width="290" height="111" rx="12"/>
+      <rect x="670" y="153" width="290" height="111" rx="12"/>
+    </g>
+    <g text-anchor="middle">
+      <text x="185" y="192" font-size="23" font-weight="bold">Black-box</text>
+      <text x="185" y="227" font-size="17">External behavior</text>
+      <text x="500" y="192" font-size="23" font-weight="bold">Grey-box</text>
+      <text x="500" y="227" font-size="17">Lightweight feedback</text>
+      <text x="815" y="192" font-size="23" font-weight="bold">White-box</text>
+      <text x="815" y="227" font-size="17">Program semantics</text>
+    </g>
+    <text x="40" y="314" font-size="21" font-weight="bold">2. How are inputs constructed?</text>
+    <g stroke="#cbd5e1" stroke-width="1.5" fill="#ecfdf5">
+      <rect x="40" y="335" width="445" height="100" rx="12"/>
+      <rect x="515" y="335" width="445" height="100" rx="12"/>
+    </g>
+    <g text-anchor="middle">
+      <text x="262" y="374" font-size="23" font-weight="bold">Mutation-based</text>
+      <text x="262" y="408" font-size="17">Modify existing inputs</text>
+      <text x="737" y="374" font-size="23" font-weight="bold">Generation-based</text>
+      <text x="737" y="408" font-size="17">Build inputs from a model</text>
+    </g>
+    <text x="40" y="464" font-size="17" fill="#047857">Structure-aware techniques can work with either approach.</text>
+    <text x="40" y="513" font-size="21" font-weight="bold">3. How are tests executed?</text>
+    <g stroke="#cbd5e1" stroke-width="1.5" fill="#fff7ed">
+      <rect x="40" y="534" width="290" height="100" rx="12"/>
+      <rect x="355" y="534" width="290" height="100" rx="12"/>
+      <rect x="670" y="534" width="290" height="100" rx="12"/>
+    </g>
+    <g text-anchor="middle">
+      <text x="185" y="573" font-size="23" font-weight="bold">Process-based</text>
+      <text x="185" y="607" font-size="16">Manage a target process</text>
+      <text x="500" y="573" font-size="23" font-weight="bold">In-process</text>
+      <text x="500" y="607" font-size="16">Engine calls a function</text>
+      <text x="815" y="573" font-size="23" font-weight="bold">Persistent</text>
+      <text x="815" y="607" font-size="16">Reuse a running process</text>
+    </g>
+    <text x="40" y="665" font-size="17" fill="#9a3412">Execution patterns can overlap; these are not exclusive categories.</text>
+  </g>
+</svg>

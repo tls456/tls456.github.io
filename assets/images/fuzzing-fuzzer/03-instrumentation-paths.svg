@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">Two routes to coverage feedback</title>
+  <desc id="desc">Compile-time instrumentation adds probes while building source code. Dynamic binary instrumentation collects execution information from an existing binary. Both can provide coverage feedback without full symbolic reasoning.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/></marker>
+  </defs>
+  <rect width="1000" height="600" rx="20" fill="#f8fafc"/>
+  <g font-family="DejaVu Sans, sans-serif" fill="#0f172a">
+    <text x="40" y="51" font-size="28" font-weight="bold">Two routes to coverage feedback</text>
+    <text x="40" y="85" font-size="18" fill="#475569">Having no source code does not mean having no execution feedback.</text>
+    <text x="260" y="133" font-size="20" font-weight="bold" text-anchor="middle">Compile-time instrumentation</text>
+    <text x="740" y="133" font-size="20" font-weight="bold" text-anchor="middle">Dynamic binary instrumentation</text>
+    <g fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)">
+      <path d="M 260 232 V 277"/>
+      <path d="M 740 232 V 277"/>
+      <path d="M 260 390 V 432 H 410 V 462"/>
+      <path d="M 740 390 V 432 H 590 V 462"/>
+    </g>
+    <g stroke="#cbd5e1" stroke-width="1.5">
+      <rect x="60" y="158" width="400" height="74" rx="12" fill="#ffffff"/>
+      <rect x="540" y="158" width="400" height="74" rx="12" fill="#ffffff"/>
+      <rect x="60" y="285" width="400" height="105" rx="12" fill="#e0f2fe"/>
+      <rect x="540" y="285" width="400" height="105" rx="12" fill="#ecfdf5"/>
+      <rect x="250" y="470" width="500" height="73" rx="12" fill="#ffffff"/>
+    </g>
+    <g text-anchor="middle">
+      <text x="260" y="203" font-size="23" font-weight="bold">Source + harness</text>
+      <text x="740" y="203" font-size="23" font-weight="bold">Existing binary</text>
+      <text x="260" y="327" font-size="23" font-weight="bold">Instrumented build</text>
+      <text x="260" y="362" font-size="16">e.g. AFL++ compiler / LLVM coverage</text>
+      <text x="740" y="327" font-size="23" font-weight="bold">Instrumented execution</text>
+      <text x="740" y="362" font-size="16">e.g. TinyInst / QEMU / FRIDA</text>
+      <text x="500" y="515" font-size="23" font-weight="bold">Coverage feedback for the fuzzer</text>
+    </g>
+    <text x="40" y="578" font-size="16" fill="#475569">Coverage observes execution. Sanitizers detect specific classes of runtime errors.</text>
+  </g>
+</svg>
